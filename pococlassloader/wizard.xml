@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wizard version="1" kind="project"
+        class="qt4project" firstpage="10"
+        id="R.PocoClassLoader" category="I.Projects"
+        featuresRequired="QtSupport.Wizards.FeatureQt">
+    <icon>console.png</icon>
+    <description>This project uses qmake for building, but is not using the Qt library.</description>
+    <displayname>POCO ClassLoader Project</displayname>;
+    <displaycategory>Non-Qt Project</displaycategory>
+    <files>
+        <file source="src/Plugin.cpp" target="src/Plugin.%CppSourceSuffix%" openeditor="false"/>
+        <file source="src/Plugin.h" target="src/Plugin.%CppHeaderSuffix%" openeditor="false"/>
+        <file source="src/Loader.cpp" target="src/Loader.%CppSourceSuffix%" openeditor="false"/>
+        <file source="src/Manifest.cpp" target="src/Manifest.%CppSourceSuffix%" openeditor="false"/>
+        <file source="src/HelloPlugin.cpp" target="src/HelloPlugin.%CppSourceSuffix%" openeditor="false"/>
+        <file source="src/HelloPlugin.h" target="src/HelloPlugin.%CppHeaderSuffix%" openeditor="false"/>
+        <file source="src/CurrentTimePlugin.cpp" target="src/CurrentTimePlugin.%CppSourceSuffix%" openeditor="false"/>
+        <file source="src/CurrentTimePlugin.h" target="src/CurrentTimePlugin.%CppHeaderSuffix%" openeditor="false"/>
+        <file source="plugins.pro" openproject="true"/>
+        <file source="loader.pro" openproject="true"/>
+        <file source="project.pro" target="%ProjectName%.pro" openproject="true"/>
+    </files>
+</wizard>

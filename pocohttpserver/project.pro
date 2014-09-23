@@ -3,10 +3,10 @@ CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
 
-SOURCES += src/main.cpp \
-    src/SimpleHTTPServerApplication.cpp \
-    src/HandlerFactory.cpp \
-    src/CurrentTimeHandler.cpp
+SOURCES += src/main.%CppSourceSuffix% \
+    src/SimpleHTTPServerApplication.%CppSourceSuffix% \
+    src/HandlerFactory.%CppSourceSuffix% \
+    src/CurrentTimeHandler.%CppSourceSuffix%
 
 HEADERS += \
     src/SimpleHTTPServerApplication.%CppHeaderSuffix% \
