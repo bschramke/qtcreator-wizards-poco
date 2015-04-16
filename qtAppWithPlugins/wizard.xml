@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wizard version="1" kind="project"
+        class="qt4project" firstpage="10"
+        id="R.QtAppWithPlugins" category="F.QtApplications"
+        featuresRequired="QtSupport.Wizards.FeatureQt">
+    <icon>qt-icon.png</icon>
+    <description></description>
+    <displayname>Qt Application with plugins Project</displayname>;
+    <displaycategory>Qt Project</displaycategory>
+    <files>
+        <file source="project.pro" target="%ProjectName%.pro" openproject="true"/>
+        <file source="project.pri" target="%ProjectName%.pri" openeditor="false"/>
+        <file source="api/api.pro" openproject="false"/>
+        <file source="api/src/plugin/IPlugin.cpp" target="api/src/plugin/IPlugin.%CppSourceSuffix%" openeditor="false"/>
+        <file source="api/include/api_global.hpp" target="api/include/plugin/api_global.%CppHeaderSuffix%" openeditor="false"/>
+        <file source="api/include/plugin/IPlugin.hpp" target="api/include/plugin/IPlugin.%CppHeaderSuffix%" openeditor="false"/>
+        <file source="app/app.pro" openproject="false"/>
+        <file source="app/app.qrc" openproject="false"/>
+        <file source="app/src/main.cpp" target="app/src/main.%CppSourceSuffix%" openproject="false"/>
+        <file source="app/src/MainWindow.cpp" target="app/src/MainWindow.%CppSourceSuffix%" openproject="false"/>
+        <file source="app/include/MainWindow.hpp" target="app/include/MainWindow.%CppHeaderSuffix%" openproject="false"/>
+        <file source="app/ui/MainWindow.ui" openproject="false"/>
+        <file source="plugins/plugins.pro" openproject="false"/>
+        <file source="plugins/plugin.pri" target="plugins/%ProjectName%-plugin.pri" openeditor="false"/>
+        <file source="plugins/HelloWorld/HelloWorld.pro" openproject="false"/>
+        <file source="plugins/HelloWorld/HelloWorld_dependencies.pri" openproject="false"/>
+        <file source="plugins/HelloWorld/HelloWorld.json.in" openproject="false"/>
+        <file source="plugins/HelloWorld/src/HelloWorldPlugin.cpp" target="plugins/HelloWorld/src/HelloWorldPlugin.%CppSourceSuffix%" openproject="false"/>
+        <file source="plugins/HelloWorld/include/HelloWorldPlugin.hpp" target="plugins/HelloWorld/include/HelloWorldPlugin.%CppHeaderSuffix%" openproject="false"/>
+    </files>
+</wizard>
